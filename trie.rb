@@ -58,10 +58,7 @@ class Service
     Trie.new(path)
   end
 
-  def self.test(word, trie)
+  def self.search(word, trie)
     trie.list_paths(word)
   end
 end
-
-trie = Service.index_emails('skilling-j')
-puts Service.test('cool', trie)
